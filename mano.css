@@ -1,0 +1,23 @@
+body table th{
+    font-weight: bold;
+
+}
+th, td{
+    text-align: center;
+    border: 2px solid black;
+    
+    
+}
+table{
+    border-collapse:collapse ;
+}
+
+tbody tr:nth-child(even){
+    background-color: antiquewhite;
+}
+tbody tr:nth-child(odd){
+    background-color: bisque;
+}
+tbody tr:hover{
+    background-color:grey;
+}

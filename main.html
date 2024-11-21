@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mano.css">
+    
+    <title>Table</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Vezeteknev</th>
+                <th colspan="2">keresztnev</th>
+                <th>Házas-e?</th>
+                <th>Állat</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+
+                <td>Kocsis</td>
+                <td >Géza</td>
+                <td>Ferenc</td>
+                <td>igen</td>
+                <td>kutyus</td>
+            </tr>
+            <tr>
+                <td>Horváth</td>
+                <td >Mária</td>
+                <td >Julia</td>
+                <td>nem</td>
+                <td>teknőc</td>
+            </tr>
+            <tr>
+                <td>Balogh</td>
+                <td colspan="2">Ferenc</td>
+                <td>igen</td>
+                <td>cicus</td>
+            </tr>
+            <tr>
+                <td>Horváth</td>
+                <td >Gábor</td>
+                <td>Attila</td>
+                <td>nem</td>
+                <td>kutyus</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <form id="form" action="/">
+
+        <div class="field">
+
+            <label for="lastname">Vezetéknév</label></br>
+
+            <input name="lastname" id="lastname"></br>
+            <div class="error"></div>
+
+        </div>
+
+        <div class="field">
+
+            <label for="firstname1">Keresztnév1</label></br>
+
+            <input name="firstname1" id="firstname1"></br>
+            <div class="error"></div>
+
+        </div>
+
+        <div class="field">
+
+            <label for="firstname2">Keresztnév2</label></br>
+
+            <input name="firstname2" id="firstname2"></br>
+            
+
+        </div>
+
+        <div class="field">
+
+            <label for="married">Házas</label>
+
+            <input name="married" id="married" type="checkbox">
+
+        </div>
+
+        <div class="field">
+
+            <label for="pet">Háziállat</label>
+
+            <select name="pet" id="pet">
+
+                <option value=""></option>
+
+                <option value="teknős">teknőc</option>
+
+                <option value="kutya">kutyus</option>
+
+                <option value="macska">cicus</option>
+
+            </select></br>
+            <div class="error"></div>
+        </div>
+
+        <button>Feltölt</button>
+
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>
